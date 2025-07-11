@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole Juego</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1 class="main-title">MONOPOLIO</h1>
+
+        <div class="game-layout">
+            <!-- Panel de Control -->
+            <div class="control-panel">
+                <h2 class="panel-title">Panel de Juego</h2>
+                
+                <!-- Jugador 1 -->
+                <div id="player1-panel" class="player-panel active-player-panel">
+                    <h3 class="player-title player-1-title">Jugador 1</h3>
+                    <p><strong>Dinero:</strong> $<span id="p1-money">200</span></p>
+                    <p><strong>Propiedades:</strong> <span id="p1-props">0</span></p>
+                    <p><strong>Preguntas:</strong> <span id="p1-questions">0</span></p>
+                </div>
+
+                <!-- Jugador 2 -->
+                <div id="player2-panel" class="player-panel">
+                    <h3 class="player-title player-2-title">Jugador 2</h3>
+                    <p><strong>Dinero:</strong> $<span id="p2-money">200</span></p>
+                    <p><strong>Propiedades:</strong> <span id="p2-props">0</span></p>
+                    <p><strong>Preguntas:</strong> <span id="p2-questions">0</span></p>
+                </div>
+                
+                <div class="dice-section">
+                     <button id="roll-dice-btn" class="roll-button">
+                        <i class="fas fa-dice"></i> Tirar Dados
+                    </button>
+                </div>
+
+                <div id="dice-container" class="dice-container">
+                    <div id="die1" class="die">?</div>
+                    <div id="die2" class="die">?</div>
+                </div>
+                 <div id="message-log" class="message-log">
+                    <p class="font-bold">Bienvenido a Monopolio de Letras.</p> ¡Tira los dados para empezar!
+                </div>
+            </div>
+
+            <!-- Tablero -->
+            <div class="board-container">
+                <div class="board">
+                    <!-- Las casillas se generan con JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="modal" class="hidden">
+        <h3 id="modal-title"></h3>
+        <div id="modal-body"></div>
+        <div id="modal-actions"></div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="/js/game.js"></script>
+</body>
+</html>
