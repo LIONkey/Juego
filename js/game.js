@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Crónica Periodística', type: 'property', price: 100, color: 'light-blue' },
         { name: 'Biografía', type: 'property', price: 120, color: 'light-blue' },
         { name: 'Cárcel / Visita', type: 'jail' },
-        { name: 'Cuento de Hadas', type: 'property', price: 140, color: 'pink' },
+        { name: 'Cuentos', type: 'property', price: 140, color: 'pink' },
         { name: 'Arca Comunal', type: 'community-chest' },
         { name: 'Fábula', type: 'property', price: 140, color: 'pink' },
         { name: 'Mito', type: 'property', price: 160, color: 'pink' },
