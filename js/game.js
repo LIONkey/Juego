@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const chanceCards = [
+        // Preguntas generales (manteniendo algunas para variedad)
         { question: '¿Cuáles son las 3 partes principales de un texto expositivo?', answer: 'introducción, desarrollo, conclusión', options: ['Introducción, desarrollo, conclusión', 'Inicio, nudo, desenlace', 'Tesis, argumentos, refutación'] },
         { question: 'Menciona un sinónimo de la palabra "alegre".', answer: 'contento', options: ['Triste', 'Contento', 'Enojado'] },
         { question: '¿Qué tipo de palabra describe una acción?', answer: 'verbo', options: ['Sustantivo', 'Adjetivo', 'Verbo'] },
@@ -121,12 +122,57 @@ document.addEventListener('DOMContentLoaded', () => {
         { question: '¿Cómo se llama el punto y seguido en una oración?', answer: 'signo de puntuación', options: ['Punto final', 'Signo de puntuación', 'Acento'] },
         { question: '¿Qué es un hiato?', answer: 'dos vocales juntas que se pronuncian en sílabas separadas', options: ['Dos vocales en una sílaba', 'Dos vocales juntas que se pronuncian en sílabas separadas', 'Una consonante y una vocal'] },
         { question: '¿Quién escribió "Cien años de soledad"?', answer: 'gabriel garcía márquez', options: ['Mario Vargas Llosa', 'Julio Cortázar', 'Gabriel García Márquez'] },
-        { question: '¿Cuál es el antónimo de "rápidido"?', answer: 'lento', options: ['Veloz', 'Lento', 'Fugaz'] },
+        { question: '¿Cuál es el antónimo de "rápido"?', answer: 'lento', options: ['Veloz', 'Lento', 'Fugaz'] },
         { question: '¿Qué tipo de palabra es "rápidamente"?', answer: 'adverbio', options: ['Adjetivo', 'Adverbio', 'Verbo'] },
         { question: '¿"El Quijote" es una obra de qué autor?', answer: 'miguel de cervantes', options: ['Miguel de Cervantes', 'Lope de Vega', 'Francisco de Quevedo'] },
         { question: '¿Qué es una onomatopeya?', answer: 'una palabra que imita un sonido', options: ['Una comparación', 'Una exageración', 'Una palabra que imita un sonido'] },
         { question: '¿Cuál es el sujeto en: "El gato negro duerme en el sofá"?', answer: 'el gato negro', options: ['El gato negro', 'Duerme', 'En el sofá'] },
         { question: '¿Qué es un sinónimo?', answer: 'una palabra que significa lo mismo que otra', options: ['Una palabra con significado opuesto', 'Una palabra que suena igual', 'Una palabra que significa lo mismo que otra'] },
+
+        // Nuevas preguntas temáticas relacionadas con los "espacios" del tablero
+        { question: '¿En qué tipo de texto,se analiza y se reflexiona sobre un tema de manera concisa?', answer: 'ensayo', options: ['Novela', 'Poema', 'Ensayo'] },
+        { question: '¿Cuál es la función principal de un "Artículo de Opinión" en un medio de comunicación?', answer: 'persuadir al lector sobre un punto de vista', options: ['Informar de manera neutral', 'Contar una historia de ficción', 'Persuadir al lector sobre un punto de vista'] },
+        { question: 'La "Crónica Periodística" se distingue por combinar el rigor informativo con elementos de, ¿qué género literario?', answer: 'género narrativo', options: ['Género dramático', 'Género narrativo', 'Género lírico'] },
+        { question: '¿Qué tipo de relato es una "Biografía" en el contexto de la literatura?', answer: 'narración de la vida de una persona real', options: ['Una historia de fantasía', 'Una narración de la vida de una persona real', 'Un texto argumentativo'] },
+        { question: 'Los "Cuentos" son narraciones breves que suelen tener una estructura sencilla y, ¿qué tipo de desarrollo de personajes?', answer: 'pocos personajes y un desarrollo conciso', options: ['Muchos personajes y tramas complejas', 'Pocos personajes y un desarrollo conciso', 'Solo diálogos sin narrador'] },
+        { question: '¿Qué característica define a una "Fábula", además de sus personajes animales o inanimados?', answer: 'siempre incluye una moraleja', options: ['Siempre es muy extensa', 'Siempre incluye una moraleja', 'No tiene un propósito claro'] },
+        { question: 'Los "Mitos" son relatos tradicionales que explican el origen de fenómenos naturales o culturales, a menudo con la intervención de, ¿qué tipo de seres?', answer: 'seres sobrenaturales o divinos', options: ['Personajes históricos', 'Seres sobrenaturales o divinos', 'Animales parlantes'] },
+        { question: 'Una "Novela Corta" se diferencia de una novela extensa por su menor longitud y, ¿qué más?', answer: 'mayor concentración de la trama', options: ['Menor calidad literaria', 'Mayor concentración de la trama', 'Necesidad de ser leída en un solo día'] },
+        { question: 'El "Guion Teatral" es el texto que contiene los diálogos y las indicaciones para la puesta en escena de, ¿qué tipo de obra?', answer: 'una obra dramática', options: ['Una película', 'Una obra dramática', 'Un podcast'] },
+        { question: '¿Cuál es el propósito principal del "Discurso Político"?', answer: 'convencer y movilizar a la audiencia', options: ['Entretener sin un mensaje', 'Convencer y movilizar a la audiencia', 'Informar sobre datos técnicos'] },
+        { question: 'Un "Texto Expositivo" tiene como objetivo primordial, ¿qué?', answer: 'informar de forma clara y objetiva', options: ['Expresar emociones', 'Informar de forma clara y objetiva', 'Contar una historia personal'] },
+        { question: '¿Qué se busca al escribir un "Texto Argumentativo"?', answer: 'defender una postura con argumentos y pruebas', options: ['Describir un paisaje', 'Defender una postura con argumentos y pruebas', 'Dar instrucciones para un juego'] },
+        { question: 'La "Monografía" es un trabajo de investigación que se enfoca en el estudio profundo de, ¿cuántos temas?', answer: 'un único tema específico', options: ['Múltiples temas sin conexión', 'Un único tema específico', 'Solo temas de actualidad'] },
+        { question: '¿Qué tipo de elementos predominan en una "Novela de Ficción"?', answer: 'elementos imaginarios y creativos', options: ['Hechos históricos verificables', 'Elementos imaginarios y creativos', 'Datos estadísticos'] },
+        { question: 'La "Novela Histórica" se caracteriza por ambientarse en un periodo del pasado y entrelazar la ficción con, ¿qué?', answer: 'eventos y figuras históricas reales', options: ['Mundos de fantasía pura', 'Eventos y figuras históricas reales', 'Historias futuristas'] },
+        { question: '¿Qué define a una "SAGA Fantástica"?', answer: 'una serie de relatos con elementos mágicos y sobrenaturales', options: ['Una colección de cuentos de terror', 'Una serie de relatos con elementos mágicos y sobrenaturales', 'Un conjunto de poemas cortos'] },
+        { question: 'Un "Manifiesto Literario" es una declaración pública que expresa los principios y las intenciones de, ¿qué?', answer: 'un movimiento o grupo de escritores', options: ['Un contrato de compraventa', 'Un movimiento o grupo de escritores', 'Una biografía autorizada'] },
+        { question: '¿Cuál es el objeto de estudio principal de un "Tratado Filosófico"?', answer: 'conceptos abstractos y fundamentales sobre la existencia', options: ['Recetas de cocina', 'Conceptos abstractos y fundamentales sobre la existencia', 'Noticias de entretenimiento'] },
+        { question: 'Una "Enciclopedia" es una obra que compila y organiza, ¿qué tipo de información?', answer: 'conocimiento general o especializado de diversas áreas', options: ['Solo obras de teatro', 'Conocimiento general o especializado de diversas áreas', 'Cuentos populares'] },
+        { question: '¿Qué es una "Tesis Doctoral" en el ámbito académico?', answer: 'una investigación original para obtener un grado de doctorado', options: ['Un resumen de un libro', 'Una investigación original para obtener un grado de doctorado', 'Un artículo de periódico'] },
+        { question: 'Una "Obra Maestra" es reconocida por su excelencia y, ¿qué otro atributo importante?', answer: 'su valor artístico y cultural perdurable', options: ['Su bajo costo de producción', 'Su valor artístico y cultural perdurable', 'Su popularidad momentánea'] },
+        // Pregunta sobre "Aves sin Nido"
+        { question: '¿Quién es la autora de la novela "Aves sin Nido", una obra clave del realismo peruano?', answer: 'clorinda matto de turner', options: ['Ricardo Palma', 'Clorinda Matto de Turner', 'Abraham Valdelomar'] },
+        // Pregunta sobre "El Caballero Carmelo"
+        { question: '¿Quién es el autor del cuento "El Caballero Carmelo", una de las obras más representativas del modernismo peruano?', answer: 'abraham valdelomar', options: ['César Vallejo', 'Abraham Valdelomar', 'José María Arguedas'] },
+        // Pregunta sobre "Paco Yunque"
+        { question: '¿Quién es el autor del cuento "Paco Yunque", que aborda temas de injusticia social y abuso escolar?', answer: 'césar vallejo', options: ['Mario Vargas Llosa', 'César Vallejo', 'Julio Ramón Ribeyro'] },
+        // Pregunta sobre "La Metamorfosis"
+        { question: '¿Quién es el autor de la novela corta "La Metamorfosis", donde el protagonista se transforma en un insecto gigante?', answer: 'franz kafka', options: ['Albert Camus', 'Franz Kafka', 'Herman Melville'] },
+        // Pregunta sobre "Los Ojos de mi Princesa"
+        { question: '¿Quién es el autor de la novela "Los Ojos de mi Princesa", una obra popular de la literatura juvenil?', answer: 'carlos cuauhtémoc sánchez', options: ['Gabriel García Márquez', 'Carlos Cuauhtémoc Sánchez', 'Paulo Coelho'] },
+        // Pregunta sobre "Moby Dick"
+        { question: '¿Quién es el autor de la novela "Moby Dick", una obra maestra de la literatura estadounidense sobre la obsesión de un capitán con una ballena blanca?', answer: 'herman melville', options: ['Mark Twain', 'Edgar Allan Poe', 'Herman Melville'] },
+        // Pregunta sobre "El Principito"
+        { question: '¿Quién es el autor de "El Principito", la famosa novela corta y cuento poético ilustrado?', answer: 'antoine de saint-exupéry', options: ['Julio Verne', 'Antoine de Saint-Exupéry', 'Lewis Carroll'] },
+        // Pregunta sobre "Agua"
+        { question: '¿Quién es el autor del cuento "Agua", una obra que retrata la vida en los Andes peruanos y la lucha por la justicia?', answer: 'josé maría arguedas', options: ['Ciro Alegría', 'José María Arguedas', 'Manuel Scorza'] },
+        // Pregunta sobre "Mi Planta de Naranja-Lima"
+        { question: '¿Quién es el autor de la novela "Mi Planta de Naranja-Lima", que narra la infancia de Zezé en Brasil?', answer: 'josé mauro de vasconcelos', options: ['Jorge Amado', 'José Mauro de Vasconcelos', 'Clarice Lispector'] },
+        // Pregunta sobre "El Vuelo de los Cóndores"
+        { question: '¿Quién es el autor del cuento "El Vuelo de los Cóndores", que forma parte de la obra "Cuentos de la Universidad"?', answer: 'abraham valdelomar', options: ['Julio Ramón Ribeyro', 'Mario Vargas Llosa', 'Abraham Valdelomar'] },
+        // Nueva pregunta sobre "La Fuerza de Sheccid"
+        { question: '¿Quién es el autor de la novela "La Fuerza de Sheccid", una obra que aborda temas de superación personal y amor juvenil?', answer: 'carlos cuauhtémoc sánchez', options: ['Gabriel García Márquez', 'Carlos Cuauhtémoc Sánchez', 'Paulo Coelho'] },
     ];
     
     // --- ESTADO DEL JUEGO ---
@@ -543,7 +589,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Si no tiene dueño, ofrece comprarla
             if (player.money >= space.price) {
                 // MODIFICACIÓN: El título del modal ahora es solo el nombre de la propiedad.
-                showModal(`${space.name}`, `<p>¿Quieres comprar esta propiedad por <strong>$${space.price}</strong>?</p>`,
+                showModal(`${space.name}`, `<p>¿Quieres comprar este espacio por <strong>$${space.price}</strong>?</p>`,
                     [
                         { text: 'Comprar', style: 'btn-confirm', handler: () => buyProperty(player, space) },
                         { text: 'Pasar', style: 'btn-danger', handler: () => { closeModal(); switchPlayer(); } }
@@ -566,7 +612,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(switchPlayer, 1000);
         } else {
             // Si ya es dueño, no pasa nada
-            addLogMessage(`Ya eres dueño de esta propiedad.`);
+            addLogMessage(`Ya eres dueño de este espacio.`);
             setTimeout(switchPlayer, 1000);
         }
     }
