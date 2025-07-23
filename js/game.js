@@ -151,27 +151,16 @@ document.addEventListener('DOMContentLoaded', () => {
         { question: 'Una "Enciclopedia" es una obra que compila y organiza, ¿qué tipo de información?', answer: 'conocimiento general o especializado de diversas áreas', options: ['Solo obras de teatro', 'Conocimiento general o especializado de diversas áreas', 'Cuentos populares'] },
         { question: '¿Qué es una "Tesis Doctoral" en el ámbito académico?', answer: 'una investigación original para obtener un grado de doctorado', options: ['Un resumen de un libro', 'Una investigación original para obtener un grado de doctorado', 'Un artículo de periódico'] },
         { question: 'Una "Obra Maestra" es reconocida por su excelencia y, ¿qué otro atributo importante?', answer: 'su valor artístico y cultural perdurable', options: ['Su bajo costo de producción', 'Su valor artístico y cultural perdurable', 'Su popularidad momentánea'] },
-        // Pregunta sobre "Aves sin Nido"
         { question: '¿Quién es la autora de la novela "Aves sin Nido", una obra clave del realismo peruano?', answer: 'clorinda matto de turner', options: ['Ricardo Palma', 'Clorinda Matto de Turner', 'Abraham Valdelomar'] },
-        // Pregunta sobre "El Caballero Carmelo"
         { question: '¿Quién es el autor del cuento "El Caballero Carmelo", una de las obras más representativas del modernismo peruano?', answer: 'abraham valdelomar', options: ['César Vallejo', 'Abraham Valdelomar', 'José María Arguedas'] },
-        // Pregunta sobre "Paco Yunque"
         { question: '¿Quién es el autor del cuento "Paco Yunque", que aborda temas de injusticia social y abuso escolar?', answer: 'césar vallejo', options: ['Mario Vargas Llosa', 'César Vallejo', 'Julio Ramón Ribeyro'] },
-        // Pregunta sobre "La Metamorfosis"
         { question: '¿Quién es el autor de la novela corta "La Metamorfosis", donde el protagonista se transforma en un insecto gigante?', answer: 'franz kafka', options: ['Albert Camus', 'Franz Kafka', 'Herman Melville'] },
-        // Pregunta sobre "Los Ojos de mi Princesa"
         { question: '¿Quién es el autor de la novela "Los Ojos de mi Princesa", una obra popular de la literatura juvenil?', answer: 'carlos cuauhtémoc sánchez', options: ['Gabriel García Márquez', 'Carlos Cuauhtémoc Sánchez', 'Paulo Coelho'] },
-        // Pregunta sobre "Moby Dick"
         { question: '¿Quién es el autor de la novela "Moby Dick", una obra maestra de la literatura estadounidense sobre la obsesión de un capitán con una ballena blanca?', answer: 'herman melville', options: ['Mark Twain', 'Edgar Allan Poe', 'Herman Melville'] },
-        // Pregunta sobre "El Principito"
         { question: '¿Quién es el autor de "El Principito", la famosa novela corta y cuento poético ilustrado?', answer: 'antoine de saint-exupéry', options: ['Julio Verne', 'Antoine de Saint-Exupéry', 'Lewis Carroll'] },
-        // Pregunta sobre "Agua"
         { question: '¿Quién es el autor del cuento "Agua", una obra que retrata la vida en los Andes peruanos y la lucha por la justicia?', answer: 'josé maría arguedas', options: ['Ciro Alegría', 'José María Arguedas', 'Manuel Scorza'] },
-        // Pregunta sobre "Mi Planta de Naranja-Lima"
         { question: '¿Quién es el autor de la novela "Mi Planta de Naranja-Lima", que narra la infancia de Zezé en Brasil?', answer: 'josé mauro de vasconcelos', options: ['Jorge Amado', 'José Mauro de Vasconcelos', 'Clarice Lispector'] },
-        // Pregunta sobre "El Vuelo de los Cóndores"
         { question: '¿Quién es el autor del cuento "El Vuelo de los Cóndores", que forma parte de la obra "Cuentos de la Universidad"?', answer: 'abraham valdelomar', options: ['Julio Ramón Ribeyro', 'Mario Vargas Llosa', 'Abraham Valdelomar'] },
-        // Nueva pregunta sobre "La Fuerza de Sheccid"
         { question: '¿Quién es el autor de la novela "La Fuerza de Sheccid", una obra que aborda temas de superación personal y amor juvenil?', answer: 'carlos cuauhtémoc sánchez', options: ['Gabriel García Márquez', 'Carlos Cuauhtémoc Sánchez', 'Paulo Coelho'] },
     ];
     
